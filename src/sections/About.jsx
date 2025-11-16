@@ -35,13 +35,8 @@ function StackTechnologies() {
   return (
     <>
       {technologies.map((technologie, index) => (
-        <a href={technologie.href} target="_blank">
-          <img
-            key={index}
-            src={technologie.ico}
-            alt=""
-            className="img-technologie"
-          />
+        <a key={index} href={technologie.href} target="_blank">
+          <img src={technologie.ico} alt="" className="img-technologie" />
         </a>
       ))}
     </>
