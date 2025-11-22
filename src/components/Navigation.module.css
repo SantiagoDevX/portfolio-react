@@ -39,12 +39,12 @@
 }
 
 .navigationList a:hover,
-.navigationList a.active {
+.navigationList a:global(.active) {
     color: #f8fafc;
 }
 
 .navigationList a:hover::before,
-.navigationList a.active::before {
+.navigationList a:global(.active)::before {
     width: 64px;
     background-color: var(--primary-color);
     height: 2px;

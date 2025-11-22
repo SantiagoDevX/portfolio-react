@@ -1,7 +1,11 @@
-function NavItem({ id, name, href }) {
+function NavItem({ id, name, href, isActive }) {
+  console.log(name, isActive)
   return (
     <li id={`nav-${id}`}>
-      <a className="nav-me-link" href={href}>
+      <a
+        className={`nav-me-link ${isActive ? 'active' : ''}`}
+        href={href}
+      >
         {name}
       </a>
     </li>
