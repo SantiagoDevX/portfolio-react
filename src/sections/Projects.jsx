@@ -3,7 +3,7 @@ import { projectList } from "../data/globalData";
 
 function Projects() {
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects" className="section">
       <h2 className="section-title">Proyectos</h2>
       <div className="project-list">
         {projectList.map((project) => (
@@ -14,6 +14,8 @@ function Projects() {
             description={project.description}
             imageSrc={project.imageSrc}
             techList={project.techList}
+            githubUrl={project.githubUrl}
+            liveUrl={project.liveUrl}
           />
         ))}
       </div>
@@ -22,3 +24,4 @@ function Projects() {
 }
 
 export default Projects;
+

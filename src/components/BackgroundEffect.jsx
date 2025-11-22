@@ -1,54 +1,24 @@
 import { useEffect } from "react";
 
-function BackgroundEffect (){
+function BackgroundEffect() {
+  const handleMouseMove = (event) => {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
 
-  const handlemouseMove = (event) => {
-    const mouseX = event.x
-    const mouseY = event.y
+    // Update CSS custom properties for cursor position
+    document.documentElement.style.setProperty('--cursor-x', `${mouseX}px`);
+    document.documentElement.style.setProperty('--cursor-y', `${mouseY}px`);
+  };
 
-    document.body.style.background= `radial-gradient(circle at ${mouseX}px ${mouseY}px, var(--secondary-color-hover), var(--primary-color) 100%)`
+  useEffect(() => {
+    document.addEventListener("mousemove", handleMouseMove);
 
-  }
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
-useEffect(()=>{
-  document.body.addEventListener("mousemove", handlemouseMove)
-
-}, [])
+  return null;
 }
 
-
-export default BackgroundEffect
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-*/
+export default BackgroundEffect;
