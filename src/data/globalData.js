@@ -15,82 +15,124 @@ import whatsapp from "../assets/img/social/whatsapp.svg"
 
 export const projectList = [
   {
-    id: "api-rest-crud",
-    title: "API REST - CRUD",
+    id: "ecommerce-fullstack",
+    title: "E-Commerce Full Stack",
     description:
-      "API RESTful que permite la gestión de tareas con operaciones CRUD usando Node.js, Express y MySQL.",
-    techList: ["JavaScript", "NodeJS", "MySQL", "Express"],
-    imageSrc: "/assets/img/api-rest-crud.jpg",
+      "Plataforma de comercio electrónico completa con carrito de compras, sistema de pagos integrado, autenticación de usuarios y panel administrativo. Incluye gestión de productos, órdenes y seguimiento de inventario.",
+    techList: ["React", "TypeScript", "NodeJS", "MySQL", "Express", "JWT"],
+    imageSrc: "/assets/img/ecommerce.jpg",
+    demoUrl: "https://demo-ecommerce.example.com",
+    githubUrl: "https://github.com/SantiagoDevX/ecommerce-fullstack",
+    featured: true
   },
   {
-    id: "to-do-app",
-    title: "TO-DO-APP",
-    description: "Aplicación básica para la organización de tareas",
-    techList: ["HTML", "CSS", "JavaScript", "NodeJS", "MySQL", "Express"],
-    imageSrc: "/assets/img/todo.jpg",
+    id: "analytics-dashboard",
+    title: "Dashboard de Analytics",
+    description:
+      "Dashboard interactivo para visualización de datos en tiempo real con gráficos dinámicos, filtros avanzados y reportes exportables. Ideal para análisis de métricas de negocio y KPIs.",
+    techList: ["React", "TypeScript", "Chart.js", "NodeJS", "MySQL"],
+    imageSrc: "/assets/img/dashboard.jpg",
+    demoUrl: "https://demo-dashboard.example.com",
+    githubUrl: "https://github.com/SantiagoDevX/analytics-dashboard",
+    featured: true
   },
   {
-    id: "chat-realtime",
-    title: "CHAT REAL-TIME",
-    description: "Chat en tiempo real usando WebSockets con Socket.IO.",
-    techList: ["HTML", "CSS", "JavaScript", "NodeJS", "Socket.io"],
-    imageSrc: "/assets/img/chat.jpg",
+    id: "social-network",
+    title: "Red Social Interactiva",
+    description:
+      "Plataforma social con sistema de posts, comentarios, likes, seguimiento de usuarios y chat en tiempo real. Incluye subida de imágenes y notificaciones instantáneas.",
+    techList: ["React", "NodeJS", "Socket.io", "MySQL", "Express", "JWT"],
+    imageSrc: "/assets/img/social-app.jpg",
+    demoUrl: "https://demo-social.example.com",
+    githubUrl: "https://github.com/SantiagoDevX/social-network",
+    featured: true
   },
+  {
+    id: "api-rest-documented",
+    title: "API REST con Documentación",
+    description:
+      "API RESTful robusta con documentación Swagger/OpenAPI, autenticación JWT, validaciones completas, manejo de errores y tests automatizados. Implementa mejores prácticas de desarrollo.",
+    techList: ["NodeJS", "Express", "MySQL", "Swagger", "Jest", "TypeScript"],
+    imageSrc: "/assets/img/api-documented.jpg",
+    githubUrl: "https://github.com/SantiagoDevX/api-rest-documented",
+    featured: false
+  },
+  {
+    id: "auth-system",
+    title: "Sistema de Autenticación",
+    description:
+      "Sistema completo de autenticación y autorización con registro, login, recuperación de contraseña, verificación por email, roles de usuario y protección de rutas.",
+    techList: ["React", "NodeJS", "JWT", "MySQL", "Express", "bcrypt"],
+    imageSrc: "/assets/img/auth-system.jpg",
+    demoUrl: "https://demo-auth.example.com",
+    githubUrl: "https://github.com/SantiagoDevX/auth-system",
+    featured: false
+  },
+  {
+    id: "task-manager",
+    title: "Gestor de Tareas Avanzado",
+    description:
+      "Aplicación de gestión de tareas con funcionalidades avanzadas: prioridades, etiquetas, fechas límite, tableros Kanban, colaboración en equipo y notificaciones.",
+    techList: ["React", "TypeScript", "NodeJS", "MySQL", "Socket.io"],
+    imageSrc: "/assets/img/task-manager.jpg",
+    demoUrl: "https://demo-tasks.example.com",
+    githubUrl: "https://github.com/SantiagoDevX/task-manager",
+    featured: false
+  }
 ];
 
 export const technologies = [
   {
-    title: "JavaScript",
+    name: "JavaScript",
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     ico: javascript,
   },
   {
-    title: "TypeScript",
+    name: "TypeScript",
     href: "https://www.typescriptlang.org/",
     ico: typescript,
   },
   {
-    title: "HTML",
+    name: "HTML5",
     href: "https://html.com/",
     ico: html,
   },
   {
-    title: "CSS3",
+    name: "CSS3",
     href: "https://developer.mozilla.org/es/docs/Web/CSS",
     ico: css,
   },
   {
-    title: "React",
+    name: "React",
     href: "https://react.dev/",
     ico: react,
   },
   {
-    title: "NodeJS",
+    name: "Node.js",
     href: "https://nodejs.org/es",
     ico: nodejs,
   },
   {
-    title: "MySQL",
+    name: "MySQL",
     href: "https://www.mysql.com/",
     ico: mysql,
   },
 ];
 
-
 export const contactInfo = [
   {
-    platform : "GitHub",
-    href : "https://github.com/SantiagoDevX",
-    ico : github
+    platform: "GitHub",
+    href: "https://github.com/SantiagoDevX",
+    ico: github
   },
   {
-    platform : "WhatsApp",
-    href : "https://github.com/SantiagoDevX",
-    ico : whatsapp
+    platform: "LinkedIn",
+    href: "https://www.linkedin.com/in/santiago-dev/", // Actualiza con tu LinkedIn real
+    ico: linkedin
   },
   {
-    platform : "LinKedin",
-    href : "https://github.com/SantiagoDevX",
-    ico : linkedin
-  },
-]
+    platform: "WhatsApp",
+    href: "https://wa.me/1234567890", // Actualiza con tu número real
+    ico: whatsapp
+  }
+];
