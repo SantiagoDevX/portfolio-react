@@ -1,27 +1,29 @@
+import styles from "./ProjectCard.module.css";
+
 function ProjectCard({ id, title, description, techList, githubUrl, liveUrl }) {
   return (
-    <div className="card" id={id}>
-      <div className="card__content">
-        <h3 className="card__title">{title}</h3>
-        <p className="card__description">{description}</p>
+    <div className={styles.card} id={id}>
+      <div className={styles.cardContent}>
+        <h3 className={styles.cardTitle}>{title}</h3>
+        <p className={styles.cardDescription}>{description}</p>
 
         {techList && techList.length > 0 && (
-          <div className="card__tech">
+          <div className={styles.cardTech}>
             {techList.map((tech, index) => (
-              <span key={index} className="tech-badge">
+              <span key={index} className={styles.techBadge}>
                 {tech}
               </span>
             ))}
           </div>
         )}
 
-        <div className="card__actions">
+        <div className={styles.cardActions}>
           {liveUrl && (
             <a
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="card__button"
+              className={styles.cardButton}
             >
               Ver Demo →
             </a>
@@ -31,7 +33,7 @@ function ProjectCard({ id, title, description, techList, githubUrl, liveUrl }) {
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="card__button"
+              className={styles.cardButton}
             >
               GitHub →
             </a>
@@ -43,4 +45,3 @@ function ProjectCard({ id, title, description, techList, githubUrl, liveUrl }) {
 }
 
 export default ProjectCard;
-

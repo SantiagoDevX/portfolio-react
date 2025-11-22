@@ -1,0 +1,59 @@
+.header {
+    padding-top: 48px;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+.name {
+    font-size: 36px;
+    font-weight: 800;
+    color: #f8fafc;
+    letter-spacing: -0.025em;
+    margin-bottom: 8px;
+    line-height: 1.1;
+}
+
+@media (min-width: 1024px) {
+    .name {
+        font-size: 48px;
+    }
+}
+
+.comercialName {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 24px;
+    display: block;
+    letter-spacing: -0.01em;
+}
+
+.basicDescription {
+    color: var(--text-muted);
+    max-width: 400px;
+    margin-bottom: 64px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.socialItemContainer {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+@media (min-width: 1024px) {
+    .socialItemContainer {
+        margin-top: auto;
+    }
+}

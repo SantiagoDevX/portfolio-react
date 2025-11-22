@@ -1,0 +1,36 @@
+.containerTechnologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.imgTechnologie {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    filter: grayscale(20%);
+}
+
+.imgTechnologie:hover {
+    transform: translateY(-4px) scale(1.1);
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.techBadge {
+    background: rgba(14, 165, 233, 0.1);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.techBadge:hover {
+    background: rgba(14, 165, 233, 0.15);
+    transform: translateY(-1px);
+}

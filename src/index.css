@@ -1,18 +1,106 @@
 * {
-  font-family: "Inter";
-}
-
-:root {
-  color-scheme: light dark;
-}
-
-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  /* Premium Dark Palette */
+  --bg-color: #020617;
+  /* Deep Slate */
+  --text-color: #e2e8f0;
+  --text-muted: #94a3b8;
+
+  /* Vibrant Accents */
+  --primary-color: #0ea5e9;
+  /* Sky 500 */
+  --primary-glow: rgba(14, 165, 233, 0.5);
+  --secondary-color: #64748b;
+  --accent-color: #6366f1;
+  /* Indigo 500 */
+
+  /* Glassmorphism */
+  --glass-bg: rgba(15, 23, 42, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-highlight: rgba(255, 255, 255, 0.05);
+
+  /* Typography */
+  --font-primary: "Inter", sans-serif;
+
+  /* Spacing */
+  --section-spacing: 80px;
+}
+
 @font-face {
   font-family: "Inter";
   src: url("./assets/fonts/Inter.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enhanced Background Gradient Effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(800px circle at var(--cursor-x, 50%) var(--cursor-y, 50%), rgba(14, 165, 233, 0.06), transparent 40%),
+    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05), transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.05), transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+  transition: background 0.5s ease;
+}
+
+/* Global Typography */
+p {
+  margin-bottom: 24px;
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Global Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Technology Icons - Global class */
+.img-technologie {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  filter: grayscale(20%);
+}
+
+.img-technologie:hover {
+  transform: translateY(-4px) scale(1.1);
+  opacity: 1;
+  filter: grayscale(0%);
 }

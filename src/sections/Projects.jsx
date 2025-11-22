@@ -1,11 +1,13 @@
 import ProjectCard from "../components/ProjectCard";
 import { projectList } from "../data/globalData";
+import styles from "../App.module.css";
+import cardStyles from "../components/ProjectCard.module.css";
 
 function Projects() {
   return (
-    <section id="projects" className="section">
-      <h2 className="section-title">Proyectos</h2>
-      <div className="project-list">
+    <section id="projects" className={styles.section}>
+      <h2 className={styles.sectionTitle}>Proyectos</h2>
+      <div className={cardStyles.projectList}>
         {projectList.map((project) => (
           <ProjectCard
             key={project.id}
@@ -24,4 +26,5 @@ function Projects() {
 }
 
 export default Projects;
+
 

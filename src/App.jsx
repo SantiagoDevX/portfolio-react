@@ -4,15 +4,15 @@ import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 
-import "./App.css";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <>
       <BackgroundEffect />
-      <div className="container">
+      <div className={styles.container}>
         <Header />
-        <main className="main">
+        <main className={styles.main}>
           <About />
           <Experience />
           <Projects />
@@ -23,3 +23,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,12 +1,14 @@
+import styles from "./Header.module.css";
+
 function Profile() {
   return (
     <>
-      <h1 className="name">Santiago Castillo</h1>
-      <h2 className="comercialName">&lt;SantiagoDevX/&gt;</h2>
+      <h1 className={styles.name}>Santiago Castillo</h1>
+      <h2 className={styles.comercialName}>&lt;SantiagoDevX/&gt;</h2>
       <p>
         <b>Desarrollador Web</b>
       </p>
-      <p className="basicDescription">
+      <p className={styles.basicDescription}>
         Apasionado por la creación y colaboración de proyectos y soluciones
         tecnológicas
       </p>
@@ -15,3 +17,4 @@ function Profile() {
 }
 
 export default Profile;
+

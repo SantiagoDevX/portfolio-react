@@ -1,9 +1,11 @@
 import { technologies } from "../data/globalData";
+import appStyles from "../App.module.css";
+import styles from "./About.module.css";
 
 function About() {
   return (
-    <section className="section" id="about-me">
-      <h2 className="section-title">Sobre Mí</h2>
+    <section className={appStyles.section} id="about-me">
+      <h2 className={appStyles.sectionTitle}>Sobre Mí</h2>
       <div className="about-content">
         <p>
           Soy un apasionado del desarrollo web con un fuerte enfoque en la
@@ -20,8 +22,8 @@ function About() {
           experiencia y pasión por la tecnología.
         </p>
 
-        <h3 className="highlight" style={{ marginTop: "32px", marginBottom: "16px" }}>Tecnologías que Utilizo:</h3>
-        <div className="container-technologies">
+        <h3 className={appStyles.highlight} style={{ marginTop: "32px", marginBottom: "16px" }}>Tecnologías que Utilizo:</h3>
+        <div className={styles.containerTechnologies}>
           <StackTechnologies />
         </div>
       </div>
@@ -42,3 +44,4 @@ function StackTechnologies() {
 }
 
 export default About;
+

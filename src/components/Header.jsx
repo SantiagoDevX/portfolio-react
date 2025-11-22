@@ -1,13 +1,14 @@
 import Profile from "./Profile";
 import Navigation from "./Navigation";
 import SocialLinks from "./SocialLinks";
+import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <Profile />
       <Navigation />
-      <div className="social-item-container">
+      <div className={styles.socialItemContainer}>
         <SocialLinks />
       </div>
     </header>
@@ -15,4 +16,5 @@ function Header() {
 }
 
 export default Header;
+
 

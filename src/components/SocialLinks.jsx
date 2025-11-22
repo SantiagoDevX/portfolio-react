@@ -1,4 +1,5 @@
 import { contactInfo } from "../data/globalData";
+import styles from "./SocialLinks.module.css";
 
 function SocialLinks() {
   return (
@@ -21,7 +22,7 @@ function SocialLink({ platform, href, icoSrc }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="socialItem"
+      className={styles.socialItem}
     >
       <img src={icoSrc} alt={platform} title={platform} />
     </a>
@@ -29,3 +30,4 @@ function SocialLink({ platform, href, icoSrc }) {
 }
 
 export default SocialLinks;
+
