@@ -6,12 +6,14 @@ import javascript from "../assets/img/technologies/JavaScript.svg";
 import mysql from "../assets/img/technologies/MySQL.svg";
 import react from "../assets/img/technologies/react.svg";
 import css from "../assets/img/technologies/CSS3.svg";
+import postgresql from "../assets/img/technologies/PostgresSQL.svg";
+import docker from "../assets/img/technologies/Docker.svg";
 import typescript from "../assets/img/technologies/typescript.svg";
 
 // Social Icons
-import github from "../assets/img/social/github.svg"
-import linkedin from "../assets/img/social/linkedin.svg"
-import whatsapp from "../assets/img/social/whatsapp.svg"
+import github from "../assets/img/social/github.svg";
+import linkedin from "../assets/img/social/linkedin.svg";
+import whatsapp from "../assets/img/social/whatsapp.svg";
 
 export const projectList = [
   {
@@ -23,7 +25,7 @@ export const projectList = [
     imageSrc: "/assets/img/ecommerce.jpg",
     demoUrl: "https://demo-ecommerce.example.com",
     githubUrl: "https://github.com/SantiagoDevX/ecommerce-fullstack",
-    featured: true
+    featured: true,
   },
   {
     id: "analytics-dashboard",
@@ -34,7 +36,7 @@ export const projectList = [
     imageSrc: "/assets/img/dashboard.jpg",
     demoUrl: "https://demo-dashboard.example.com",
     githubUrl: "https://github.com/SantiagoDevX/analytics-dashboard",
-    featured: true
+    featured: true,
   },
   {
     id: "social-network",
@@ -45,7 +47,7 @@ export const projectList = [
     imageSrc: "/assets/img/social-app.jpg",
     demoUrl: "https://demo-social.example.com",
     githubUrl: "https://github.com/SantiagoDevX/social-network",
-    featured: true
+    featured: true,
   },
   {
     id: "api-rest-documented",
@@ -55,7 +57,7 @@ export const projectList = [
     techList: ["NodeJS", "Express", "MySQL", "Swagger", "Jest", "TypeScript"],
     imageSrc: "/assets/img/api-documented.jpg",
     githubUrl: "https://github.com/SantiagoDevX/api-rest-documented",
-    featured: false
+    featured: false,
   },
   {
     id: "auth-system",
@@ -66,7 +68,7 @@ export const projectList = [
     imageSrc: "/assets/img/auth-system.jpg",
     demoUrl: "https://demo-auth.example.com",
     githubUrl: "https://github.com/SantiagoDevX/auth-system",
-    featured: false
+    featured: false,
   },
   {
     id: "task-manager",
@@ -77,8 +79,8 @@ export const projectList = [
     imageSrc: "/assets/img/task-manager.jpg",
     demoUrl: "https://demo-tasks.example.com",
     githubUrl: "https://github.com/SantiagoDevX/task-manager",
-    featured: false
-  }
+    featured: false,
+  },
 ];
 
 export const technologies = [
@@ -117,22 +119,32 @@ export const technologies = [
     href: "https://www.mysql.com/",
     ico: mysql,
   },
+  {
+    name: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    ico: postgresql,
+  },
+  {
+    name: "Docker",
+    href: "https://www.docker.com/",
+    ico: docker,
+  },
 ];
 
 export const contactInfo = [
   {
     platform: "GitHub",
     href: "https://github.com/SantiagoDevX",
-    ico: github
+    ico: github,
   },
   {
     platform: "LinkedIn",
     href: "https://www.linkedin.com/in/santiago-dev/", // Actualiza con tu LinkedIn real
-    ico: linkedin
+    ico: linkedin,
   },
   {
     platform: "WhatsApp",
     href: "https://wa.me/1234567890", // Actualiza con tu número real
-    ico: whatsapp
-  }
+    ico: whatsapp,
+  },
 ];

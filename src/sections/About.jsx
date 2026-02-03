@@ -22,7 +22,12 @@ function About() {
           experiencia y pasión por la tecnología.
         </p>
 
-        <h3 className={appStyles.highlight} style={{ marginTop: "32px", marginBottom: "16px" }}>Tecnologías que Utilizo:</h3>
+        <h3
+          className={appStyles.highlight}
+          style={{ marginTop: "32px", marginBottom: "16px" }}
+        >
+          Tecnologías que Utilizo:
+        </h3>
         <div className={styles.containerTechnologies}>
           <StackTechnologies />
         </div>
@@ -35,8 +40,18 @@ function StackTechnologies() {
   return (
     <>
       {technologies.map((technologie, index) => (
-        <a key={index} href={technologie.href} target="_blank" rel="noopener noreferrer">
-          <img src={technologie.ico} alt={technologie.name || ""} className="img-technologie" />
+        <a
+          key={index}
+          href={technologie.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={technologie.ico}
+            alt={technologie.name || ""}
+            className="img-technologie"
+            title={technologie.name}
+          />
         </a>
       ))}
     </>
@@ -44,4 +59,3 @@ function StackTechnologies() {
 }
 
 export default About;
-
